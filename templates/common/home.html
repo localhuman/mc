@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+
+    <script type="text/javascript">
+        window.__admin_media_prefix__ = "/static/admin/";
+    </script>
+
+
+
+
+{% block jsblock %}
+    {{ block.super }}
+{% endblock %}
+
+
+{% block bodytag %}
+<body>
+{% endblock %}
+
+{% block content %}
+
+    <section class="main">
+        <div class="mainTop breadcrumb">
+            <h2>an old approach to new problems</h2>
+
+            <ol class="crumbs">
+<!--                <li><a href="/info" class="active">info</a></li>
+                <li><a href="/tools">tools</a></li>
+                <li><a href="/projects">projects</a></li>-->
+                <li><a href="/contact">contact</a></li>
+            </ol>
+
+        </div>
+
+
+        <h3 class="underConstruction">currently under construction</h3>
+
+        <p>You won't need a hard-hat to get around here safely.</p>
+
+        <p>Modern Carpentry L.L.C. is a Minnesota registered business entity owned and operated by Thomas Saunders.</p>
+
+        <p>I'm responsible for the design, 
+            architecture, prototyping, coding, testing,
+            analysis, and deployment of web and mobile software systems.</p>
+
+        <p>Being a practical guy, I'm always open to new things.  But the following is a short list of technologies I enjoy using in my projects:</p>
+        <ul class="technologyList">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Objective-C</li>
+        </ul>
+        <p>Depending upon the nature, scope, and timeline of your project, I may be available to help you.</p>
+        <p>If you'd like to learn more or get in contact please use <a href="/contact/">this form</a>.</p>
+        <h3 class="checkBackSoon">please check back soon for more information</h3>
+    </section>
+
+
+
+{% endblock %}
+
+{% block footerjs %}
+
+    {{ block.super }}
+
+
+
+
+{% endblock %}

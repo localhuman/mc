@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+    <section class="main">
+        <div class="mainTop breadcrumb">
+            <h2>an old approach to new problems</h2>
+
+            <ol class="crumbs">
+<!--                <li><a href="/info" class="active">info</a></li>
+                <li><a href="/tools">tools</a></li>
+                <li><a href="/projects">projects</a></li>-->
+                <li><a href="/contact" class="active">contact</a></li>
+            </ol>
+
+        </div>
+
+
+        <h2>Contact</h2>
+
+        {% if form.errors %}
+            <p style="color: red;">
+                Please correct the error{{ form.errors|pluralize }} below.
+            </p>
+        {% endif %}
+
+        <form action="" method="post">
+            {%  csrf_token %}
+            <ul>
+                {{ form.as_ul }}
+            </ul>
+            <button type="submit" class="red iconCheck">send</button>
+        </form>
+
+    </section>
+{% endblock %}

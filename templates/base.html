@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>{% block title %}Modern Carpently L.L.C.{% endblock %}</title>
+
+
+{% block poemblock %}
+    {% include 'common/poem.html' %}
+{% endblock %}
+
+
+
+{% block cssblock %}
+
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/630d6ab5-364a-40f4-be75-cfceaf1ac9e2.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/melody.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/forms.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/modals.css">
+
+{% endblock %}
+
+{% block favicon %}
+    <link rel="icon" type="image/x-icon" href="{{STATIC_URL }}favicon.ico" />
+{% endblock %}
+
+
+{% block jsblock %}
+
+
+
+{% endblock %}
+
+{% block meta %}
+    <meta charset="utf-8">
+{% endblock %}
+
+{% block mobilemeta %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+{% endblock %}
+
+{% block fbmeta %}
+    <meta property="og:site_name" content="modern-carpentry.com"/>
+    <meta property="og:title" content="Modern Carpentry L.L.C. is awesome."/>
+    <meta property="og:description" content="Modern Carpentry L.L.C. is awesome."/>
+<!--    <meta property="og:image" content="Modern Carpentry L.L.C. is awesome."/>-->
+    <meta property="og:url" content="http://modern-carpentry.com"/>
+{% endblock %}
+
+
+
+</head>
+
+
+<body>
+
+
+{% block headerblock %}
+
+    {% include 'common/header.html' %}
+
+{% endblock %}
+
+
+{% block content %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include "common/footer.html" %}
+{% endblock %}
+
+
+{% block modalblock %}
+    <div id="modalContainer"></div>
+{% endblock %}
+
+
+{%  block footerjs %}
+
+
+    {% include "common/footerjs.html" %}
+
+
+
+{% endblock %}
+
+
+
+</body>
+</html>

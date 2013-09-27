@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block cssblock %}
+
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/terms.css">
+{% endblock %}
+
+{% block title %}Ground Truth Terms and Conditions{% endblock %}
+
+{% block content %}
+
+
+		<section class="main">
+			<div class="mainTop breadcrumb">
+
+
+                <h2>Terms and Conditions</h2>
+            </div>
+
+            <p>We're gonna keep your privacy.  We're gonna play nice.  That's about it!</p>
+        </section>
+
+
+{% endblock %}
